@@ -1,5 +1,5 @@
 # new-ubuntu-setup
-# Update ubutun
+# Update ubuntu
 ```
 sudo apt update
 sudo apt upgrade --force
@@ -14,7 +14,8 @@ sudo apt install wget git curl snapd zsh -y
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-# zsh-autosuggestions zsh-syntax-highlighting => to plugin
+nano ~/.zshrc
+# in the file search and write: zsh-autosuggestions zsh-syntax-highlighting => to plugin
 source ~/.zshrc
 # Set zsh mặc định
 chsh -s $(which zsh)
